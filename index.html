@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CASPER 🟢</title><style>
+:root{--bg:#fff;--fg:#1a1a1a;--muted:#666;--line:#ddd;--head:#f3f3f3;--bar:#3a7}
+@media (prefers-color-scheme:dark){:root{--bg:#121212;--fg:#eee;--muted:#999;
+--line:#333;--head:#1e1e1e;--bar:#4b9}}
+body{margin:0;padding:12px 16px;background:var(--bg);color:var(--fg);
+font:15px/1.4 -apple-system,system-ui,"Segoe UI",Roboto,sans-serif}
+h1{font-size:1.3em;margin:.2em 0}h2{font-size:1.1em;margin:1.2em 0 .4em}
+h3{font-size:1em;margin:.8em 0 .2em}.big{font-size:1.4em}.muted{color:var(--muted)}
+.scroll{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:.9em}
+th,td{border-bottom:1px solid var(--line);padding:4px 6px;text-align:left;
+white-space:nowrap}th{background:var(--head)}summary{cursor:pointer;padding:6px 0}
+.bar{height:10px;background:var(--line);border-radius:5px;overflow:hidden}
+.bar div{height:100%;background:var(--bar)}.bar.warn div{background:#d64}
+.steps{list-style:none;padding:0;margin:.5em 0}.steps li{padding:6px 0;
+border-bottom:1px solid var(--line);word-break:break-word}.err{color:#d43}
+.dot{display:inline-block;width:.7em;height:.7em;border-radius:50%;margin-right:.4em}
+.dot.ok{background:#2a5}.dot.bad{background:#d43}
+</style></head>
+<body>
+<section><h1><span class="big">🟢</span> Всё работает</h1><p class="muted">Обновлено 05.10 14:04 (Europe/Moscow), 11:04 UTC</p><ul class="steps"><li><span class="dot ok"></span><b>nba_update</b><br><span class="muted">успех: 05.10 14:01 · запуск: 05.10 14:01</span><br><span class="">6s</span></li><li><span class="dot ok"></span><b>kalshi_settle</b><br><span class="muted">успех: 05.10 14:01 · запуск: 05.10 14:01</span><br><span class="">8s</span></li><li><span class="dot ok"></span><b>paper_settle</b><br><span class="muted">успех: 05.10 14:01 · запуск: 05.10 14:01</span><br><span class="">2s</span></li><li><span class="dot ok"></span><b>train_1h</b><br><span class="muted">успех: 05.10 14:02 · запуск: 05.10 14:02</span><br><span class="">85s</span></li><li><span class="dot ok"></span><b>train_3h</b><br><span class="muted">успех: 05.10 14:04 · запуск: 05.10 14:04</span><br><span class="">86s</span></li></ul></section>
+<section><h2>Сегодня (05.10, дата матчей по времени США)</h2><p>Прогнозов на сегодня нет.</p><p><b>base</b>: <span class='muted'>ставок нет</span></p><p><b>under8</b>: <span class='muted'>ставок нет</span></p><p><b>maker</b>: <span class='muted'>ставок нет</span></p><p><b>blend</b>: <span class='muted'>ставок нет</span></p></section>
+<section><h2>По дням (последние 14)</h2><p>Ставок ещё нет.</p></section>
+<section><details><summary>Что значат слова</summary><ul><li><b>base</b> — перевес ≥ 3%, обе стороны, вход за последний час до матча</li><li><b>under8</b> — только «меньше», перевес ≥ 8%, вход за 3–6 ч до матча</li><li><b>maker</b> — заявка по середине цены; «Отмен.» — заявка так и не исполнилась</li><li><b>blend</b> — вероятность — смесь модели и рынка</li><li><b>ROI</b> — прибыль / поставленные деньги (только рассчитанные ставки)</li><li><b>CLV</b> — цена закрытия − наша цена (в центах); CLV mid — то же по середине bid/ask, честнее</li></ul><p class='muted'>У всех вариантов объём рынка на входе ≥ 100 контрактов. Деньги бумажные.</p></details></section>
+</body></html>
